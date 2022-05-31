@@ -16,3 +16,7 @@ main {
 label {
     color: #000;
 }
+
+.hiden {
+    visibility: hidden;
+}

@@ -27,11 +27,11 @@
             <label for="Weight">Digite seu peso</label>
             <input type="number" id="Weight">
             <label for="height">Digite sua altura</label>
-            <input type="number" id="height" step=".1">
+            <input type="number" id="height">
             <input type="button" value="Calcular" id="btnCalcular" onclick="calcular()">
         </div>
 
-        <div class="FirstPage">
+        <div class="FirstPage" id="FirstPage">
             <div class="primaryTitle">
                 <h1>Calculadora de IMC</h1>
                 <p>
@@ -49,26 +49,28 @@
             </div>
 
             <div class="socialNetworks">
-                <a href="https://www.instagram.com/um_vitor_qualquer/">
+                <a href="https://www.instagram.com/um_vitor_qualquer/" target="_blank">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
-                <a href="https://github.com/Jovi-souza">
+                <a href="https://github.com/Jovi-souza" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-499578206/">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-499578206/" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </div>
         </div>
 
-        <div class="abaixoDoPeso">
+        <div class="abaixoDoPeso hiden" id="abaixoDoPeso">
             <div class="abaixoDoPesoResultado">
                 <h2 id="resultIMCAbaixo" class="resultIMCAbaixo"></h2>
                 <p>
-                    A Obesidade é uma doença crônca , a qual se caracteriza pelo acúmulo excessivo de gordura corporal.
-                    É considerada fator de risco para uma série de outros problemas como doenças cardiovasculares,
-                    diabetes e até mesmo o câncer. Uma dieta desbalanceada e o sedentarismo estão relacionados com o
-                    desenvolvmento dessa doença
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae molestias atque, consequatur
+                    nostrum rem unde praesentium. Ipsum laudantium doloremque perferendis est voluptate suscipit nostrum
+                    distinctio similique harum dolore, quibusdam nihil. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Veniam sed aut, itaque illum quis distinctio libero architecto consequuntur rerum,
+                    provident labore cupiditate esse iste sint officiis omnis nulla blanditiis excepturi! Lorem ipsum
+                    dolor
                 </p>
             </div>
             <img src="imagens/undraw_breakfast_psiw.svg" alt="imagem de almoço" class="imgBreakFast">
@@ -86,7 +88,7 @@
             <img src="imagens/undraw_personal_trainer_re_cnua.svg" alt="" class="personalAbaixo">
         </div>
 
-        <div class="pesoNormal">
+        <div class="pesoNormal hiden" id="pesoNormal">
             <div class="pessoaNormalResultado">
                 <h2 id="resultIMCNormal" class="resultIMCNormal"></h2>
                 <p>
@@ -106,7 +108,7 @@
             <img src="imagens/undraw_happy_news_re_tsbd.svg" alt="imagem de uma mulher" class="happyPerson">
         </div>
 
-        <div class="acimaDoPeso">
+        <div class="acimaDoPeso hiden" name="acimaDoPeso" id="acimaDoPeso">
             <div class="acimaDoPesoResultado">
                 <h2 id="resultIMCAcima" class="resultIMCAcima"></h2>
                 <p>
