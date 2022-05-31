@@ -10,8 +10,10 @@ function calcular() {
 
     mensagemDeResultado.innerHTML = `Resultado: ${resultIMC.toFixed(1)}`
 
-    let FirstPage = document.getElementById("FirstPage")
-    FirstPage.classList.add("hiden")
+    if (resultIMC > 0) {
+        let FirstPage = document.getElementById("FirstPage")
+        FirstPage.classList.add("hiden")
+    }
 
     if (resultIMC < 18.5) {
         resultIMCAbaixo.innerHTML = 'Abaixo do Peso Normal'
@@ -42,5 +44,6 @@ function calcular() {
         resultIMCAcima.innerHTML = 'Obesidade Classe III'
         let acimaDoPeso = document.getElementById("acimaDoPeso")
         acimaDoPeso.classList.toggle("hiden")
+
     }
 }

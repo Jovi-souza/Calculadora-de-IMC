@@ -16,9 +16,16 @@
 }
 
 .calculoIMC input {
-    height: 2em;
+    height: 3em;
     margin: 5px;
     color: #000;
+}
+
+#Weight,
+#height {
+    padding-left: 10px;
+    border-radius: 50px 0 0 50px;
+    border-right: 8px solid #6C63FF;
 }
 
 .mensagemDeResultado {
@@ -36,4 +43,9 @@
     width: 8em;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
 }
