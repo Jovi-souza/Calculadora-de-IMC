@@ -1,0 +1,50 @@
+.abaixoDoPeso {
+    position: relative;
+    visibility: hidden;
+}
+
+.imgBreakFast {
+    position: absolute;
+    top: 7em;
+    left: 32em;
+
+    width: 20em;
+}
+
+.resultIMCAbaixo {
+    margin-bottom: 1em;
+    background-color: #6C63FF;
+    border-left: 5px solid #b1b2bc;
+    border-radius: 0 50px 50px 0;
+    padding-left: 20px;
+}
+
+.abaixoDoPesoResultado {
+    position: absolute;
+    right: 2em;
+    top: 9em;
+    width: 25em;
+}
+
+
+.abaixoDoPesoCuidados {
+    position: absolute;
+    left: 32em;
+    top: 24em;
+    width: 25em;
+}
+
+.abaixoDoPesoCuidados h2 {
+    margin-bottom: 1em;
+    background-color: #6C63FF;
+    border-left: 5px solid #b1b2bc;
+    border-radius: 0 50px 50px 0;
+    padding-left: 20px;
+}
+
+.personalAbaixo {
+    position: absolute;
+    right: 2em;
+    top: 22em;
+    width: 20em;
+}

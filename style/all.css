@@ -1,9 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 body {
     color: #b1b2bc;
-    background-image: linear-gradient(to right, gray 25%, black 25%);
+    background-color: black;
+}
+
+main {
+    position: relative;
+}
+
+label {
+    color: #000;
 }

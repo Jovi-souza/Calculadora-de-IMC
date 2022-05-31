@@ -7,40 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/calculo.css">
+    <link rel="stylesheet" href="style/firstPage.css">
+    <link rel="stylesheet" href="style/acimaDoPeso.css">
+    <link rel="stylesheet" href="style/pesoNormal.css">
+    <link rel="stylesheet" href="style/pesoAbaixo.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div class="LeftSide">
-            <div class="mensagemDeResultado">
-
-            </div>
-            <div class="calculadora"></div>
+        <div class="calculoIMC">
+            <p class="mensagemDeResultado" id="mensagemDeResultado">
+                Resultado:
+            </p>
+            <h2>
+                Para calcular o IMC basta preencher os campos abaixo.
+            </h2>
+            <label for="Weight">Digite seu peso</label>
+            <input type="number" id="Weight">
+            <label for="height">Digite sua altura</label>
+            <input type="number" id="height" step=".1">
+            <input type="button" value="Calcular" id="btnCalcular" onclick="calcular()">
         </div>
-        <div class="RightSide">
-            <div class="content">
 
+        <div class="FirstPage">
+            <div class="primaryTitle">
                 <h1>Calculadora de IMC</h1>
                 <p>
-                    Olá seja bem-vindo, meu nome é João Vitor e desenvolvi esse projeto de calculadora de IMC (Indice de
-                    massa corporal) para treinar meus conhecimentos como estudante de desenvolvimento Web
+                    Olá seja bem-vindo, meu nome é João Vitor e desenvolvi esse projeto de uma calculadora de IMC
+                    (Indice de massa corporal) para treinar meus conhecimentos como estudante de desenvolvimento Web
                 </p>
+            </div>
 
-                <div class="imgMe">
-                    <img src="imagens/Vitor-Perfil.jpg" alt="Ícone do desenvolvedor">
-                </div>
+            <div class="imgMe">
+                <img src="imagens/meuPerfil.img.jpeg" alt="Ícone do desenvolvedor">
+            </div>
 
-                <div class="imgStudent">
-                    <img src="/imagens/undraw_hello_re_3evm.svg" alt="">
-                </div>
+            <div class="imgStudent">
+                <img src="/imagens/undraw_hello_re_3evm.svg" alt="ícone d">
+            </div>
 
-                <div class="socialNetworks">
+            <div class="socialNetworks">
+                <a href="https://www.instagram.com/um_vitor_qualquer/">
                     <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://github.com/Jovi-souza">
                     <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-499578206/">
                     <ion-icon name="logo-linkedin"></ion-icon>
-                </div>
+                </a>
             </div>
         </div>
+
+        <div class="abaixoDoPeso">
+            <div class="abaixoDoPesoResultado">
+                <h2 id="resultIMCAbaixo" class="resultIMCAbaixo"></h2>
+                <p>
+                    A Obesidade é uma doença crônca , a qual se caracteriza pelo acúmulo excessivo de gordura corporal.
+                    É considerada fator de risco para uma série de outros problemas como doenças cardiovasculares,
+                    diabetes e até mesmo o câncer. Uma dieta desbalanceada e o sedentarismo estão relacionados com o
+                    desenvolvmento dessa doença
+                </p>
+            </div>
+            <img src="imagens/undraw_breakfast_psiw.svg" alt="imagem de almoço" class="imgBreakFast">
+            <div class="abaixoDoPesoCuidados">
+                <h2>Alguns cuidados</h2>
+                <p>
+                    para prevenir a Obesidade ou cuidar dela é preciso esforço, dedicação e orientação médica. Você deve
+                    evitar comidas gordurosas, sedentarismo, muito açucar e procurar a ajuda de um profissional, seja
+                    ele
+                    um médico nutricionista para lhe orientar sobre e/ou a ajuda de um profissional para lhe auxiliar na
+                    hora de exercícios.
+                    lembrando que corpo sarado nem sempre é sinônimo de saúde, faça por você e acima de tudo SE AME!!
+                </p>
+            </div>
+            <img src="imagens/undraw_personal_trainer_re_cnua.svg" alt="" class="personalAbaixo">
+        </div>
+
+        <div class="pesoNormal">
+            <div class="pessoaNormalResultado">
+                <h2 id="resultIMCNormal" class="resultIMCNormal"></h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, eos temporibus repellat
+                    exercitationem, at odit sequi obcaecati quo, illum eius dignissimos rem quia alias eaque
+                    consequuntur blanditiis ut? Perspiciatis, facere.lore Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis cum aliquid, velit obcaecati id eaque soluta nulla aperiam, laboriosam
+                    ea doloremque non vitae porro dolorem, commodi quod beatae voluptas eveniet! Lorem ipsum dolor, sit
+                    amet consectetur adipisicing elit. Eaque ea et, delectus ullam ab explicabo quisquam numquam
+                    voluptatem voluptatibus deserunt in consectetur, neque quibusdam? Aperiam illo earum veritatis
+                    corporis maxime?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam id, vel hic cum accusantium cumque
+                    impedit voluptate doloremque, sit debitis ducimus commodi facere aliquid totam fuga nesciunt fugiat
+                    rerum consequatur?Lorem ipsum dolor sit amet
+                </p>
+            </div>
+            <img src="imagens/undraw_happy_news_re_tsbd.svg" alt="imagem de uma mulher" class="happyPerson">
+        </div>
+
+        <div class="acimaDoPeso">
+            <div class="acimaDoPesoResultado">
+                <h2 id="resultIMCAcima" class="resultIMCAcima"></h2>
+                <p>
+                    A Obesidade é uma doença crônca , a qual se caracteriza pelo acúmulo excessivo de gordura corporal.
+                    É considerada fator de risco para uma série de outros problemas como doenças cardiovasculares,
+                    diabetes e até mesmo o câncer. Uma dieta desbalanceada e o sedentarismo estão relacionados com o
+                    desenvolvmento dessa doença
+                </p>
+            </div>
+            <img src="imagens/undraw_medicine_b-1-ol.svg" alt="imagem de médicos" class="imgDoctor">
+            <div class="acimaDoPesoCuidados">
+                <h2>Alguns cuidados</h2>
+                <p>
+                    para prevenir a Obesidade ou cuidar dela é preciso esforço, dedicação e orientação médica. Você deve
+                    evitar comidas gordurosas, sedentarismo, muito açucar e procurar a ajuda de um profissional, seja
+                    ele
+                    um médico nutricionista para lhe orientar sobre e/ou a ajuda de um profissional para lhe auxiliar na
+                    hora de exercícios.
+                    lembrando que corpo sarado nem sempre é sinônimo de saúde, faça por você e acima de tudo SE AME!!
+                </p>
+            </div>
+            <img src="imagens/undraw_personal_trainer_re_cnua.svg" alt="imagem personal trainer" class="imgPersonal">
+        </div>
+
     </main>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
 </body>
